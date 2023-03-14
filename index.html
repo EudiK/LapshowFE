@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-6.2.1-web/css/all.css">
+    <title>LapShow</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="layout">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <div class="header__navbar-logo">
+                            <a href="" class="header__logo-link">
+                                <img class="header__logo-img" src="./asset/img/lapshowlogo.png" alt="">
+                            </a>
+                        </div>
+    
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">SẢN PHẨM</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">SO SÁNH</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">HỖ TRỢ</a>
+                            </li>
+                        </ul>
+    
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <div class="header__navbar-link">
+                                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item unuser-icon">
+                                <div href="" class="header__navbar-link">
+                                    <i class="fa-sharp fa-solid fa-user-large-slash"></i>
+                                </div>
+                                <div class="header__navbar-list-action">
+                                    <div class="header__navbar-action-sign-up action-user">
+                                        <span>Đăng ký</span>
+                                    </div>
+                                    <div class="header__navbar-action-login action-user">
+                                        <span>Đăng nhập</span>
+                                    </div>
+                                    <div class="header__navbar-action-sign-out action-user">
+                                        <span>Đăng xuất</span>
+                                    </div>
+                                </div>
+                            </li>
+    
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+    
+            <div class="slider">
+                <i class="fa-sharp fa-solid fa-chevron-left slider__trans-left"></i>
+                <ul class="slider__dot-list">
+                    <li class="slider__dot-item">
+                        <i class="fa-sharp fa-solid fa-minus"></i>
+                    </li>
+                    <li class="slider__dot-item">
+                        <i class="fa-sharp fa-solid fa-minus"></i>
+                    </li>
+                    <li class="slider__dot-item">
+                        <i class="fa-sharp fa-solid fa-minus"></i>
+                    </li>
+                </ul>
+                <div class="slider__img-list">
+                    <div class="slider__img-item">
+                        <img src="./asset/img/asus_rog_zephyrus_duo_16_2022_gx650_1.jpg" alt="" class="slider__img-pic">
+                    </div>
+                    <div class="slider__img-item">
+                        <img src="./asset/img/DELL-Inspiron-3511-2021-H4-500x500.jpeg" alt="" class="slider__img-pic">
+                    </div>
+                    <div class="slider__img-item">
+                        <img src="./asset/img/MacBook-Air-Space-Grey-M2-600x600.png" alt="" class="slider__img-pic">
+                    </div>
+                </div>
+                <i class="fa-sharp fa-solid fa-chevron-right slider__trans-right"></i>
+            </div>
+            <script src="./javascript/slider.js"></script>
+    
+            <div class="container">
+                <div class="container__grid-1">
+                    <div class="grid">
+                        <div class="container__criteria">
+                            <ul class="container__criteria-list">
+                                <li class="criteria-select">
+                                    <select name="CPU" id="">
+                                        <option value="intel">Intel</option>
+                                        <option value="amd">AMD</option>
+                                    </select>
+                                </li>
+                                <li class="criteria-select">
+                                    <select name="RAM" id="">
+                                        <option value="8GB">8GB</option>
+                                        <option value="16GB">16GB</option>
+                                    </select>
+                                </li>
+                                <li class="criteria-select">
+                                    <select name="Hard_Drive" id="">
+                                        <option value="SSD">SSD</option>
+                                        <option value="HDD">HDD</option>
+                                    </select>
+                                </li>
+                                <li class="criteria-select">
+                                    <select name="CARD" id="">
+                                        <option value="onboard">Onboard</option>
+                                        <option value="NVIDIA">NVIDIA</option>
+                                        <option value="AMD_Radeon">AMD Radeon</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="container__product-backgr">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid__column-5-12">
+                                <div class="container__product-item">
+                                    <div class="container__product-img"
+                                        style="background-image: url(./asset/img/asus_rog_zephyrus_duo_16_2022_gx650_1.jpg);"></div>
+                                    <div class="container__product-information">
+                                        <div class="container__product-item-name">ROG</div>
+                                        <div class="container__product-item-cpu">Intel i5</div>
+                                        <div class="container__product-item-ram">8GB</div>
+                                        <div class="container__product-item-card">GTX 1650ti</div>
+                                        <div class="container__product-item-hard-drive">512GB</div>
+                                    </div>
+                                    <div class="container__product-action">
+                                        <button class="product__detail-inf btn ">Xem thêm</button>
+                                        <button class="product__add-comparison btn">So sánh</button>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+            <footer class="footer">
+                <div class="footer__slogan">Made with depression</div>
+            </footer>
+        </div>
+
+        
+        <div class="modal">
+            <div class="modal__background">
+                <div class="modal__card">
+                    <div class="modal__card-head">
+                        <h4>Thông tin chi tiết</h4>
+                        <i class="fa-sharp fa-solid fa-xmark modal-close"></i>
+                    </div>
+                    <div class="modal__card-body">
+                        <div class="card-body_item column">
+                            <p class="row-half">Tên sản phẩm</p>
+                            <P class="row-half">MSIfdsfa sfsd áda fdsaf sad fsda fads fs dà dsaf dsa fds f sdaf dsa fds agfa dsg fd gf g dsa</P>
+                        </div>
+                        
+                    </div>
+                    <div class="modal__card-foot">
+                        <button class="modal__card-close modal-close">
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                            Đóng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__sign-up">
+            <div class="sign-up__background">
+                <div class="sign-up__card">
+                    <form action="">
+                        <div class="sign-up__header">
+                            <h4>Đăng ký</h4>
+                            <i class="fa-sharp fa-solid fa-xmark sign-up-close"></i>
+                        </div>
+                        <label ><input type="text" name="" placeholder="Tên"></label>
+                        <label ><input type="password" name="" placeholder="Mật khẩu"></label>
+                        <label ><input type="text" name="" placeholder="Email"></label>
+                        <button class="sign-up__btn">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__login">
+            <div class="login__background">
+                <div class="login__card">
+                    <form action="">
+                        <div class="login__header">
+                            <h4>Đăng nhập</h4>
+                            <i class="fa-sharp fa-solid fa-xmark login-close"></i>
+                        </div>              
+                        <label ><input type="text" name="" placeholder="Email"></label>
+                        <label ><input type="password" name="" placeholder="Mật khẩu"></label>
+                        <button class="login__btn">Đăng nhập</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="./javascript/login.js"></script>
+        <script src="./javascript/signup.js"></script>
+        <script src="./javascript/modal.js"></script>
+    </div>
+</body>
+
+</html>

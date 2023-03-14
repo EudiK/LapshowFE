@@ -1,0 +1,509 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    height: 62px;
+    background-color: #000;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar-logo{
+    height: 62px;
+}
+
+.header__logo-link{
+    height: 62px;
+    display: inline-block;
+}
+
+.header__logo-img {
+    height: 62px;
+    
+}
+
+.header__navbar-list{
+    padding-left: 0;
+    margin: 0;
+}
+
+.header__navbar-list {
+    list-style: none;
+    
+}
+
+.header__navbar-item, .header__navbar-link{
+    display: inline-block;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+
+.header__navbar-link{
+    padding: 22px; 
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.header__navbar-link:hover {
+    background-color: #333;
+}
+
+.unuser-icon:hover .header__navbar-list-action{
+    display: block;
+}
+
+.header__navbar-list-action::after{
+    content: '';
+    display: block;
+    height: 10px;
+    width: 100px;
+    position: absolute;
+    top: -5px;
+    
+    
+}
+
+.header__navbar-list-action{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100px;
+    background-color: #e3e4e6;
+    border-radius: 5px;
+    transform-origin: top;
+    animation: grownth ease-in 0.1s;
+    cursor: pointer;
+}
+
+.header__navbar-list-action div:hover {
+    background-color: #8b8b8b;
+}
+
+.header__navbar-list-action span{
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.header__navbar-list-action .action-user{
+    padding: 10px 3px;
+}
+.slider{
+    margin-top: 62px;
+    height: 800px;
+    position: relative;
+}
+
+.slider__trans-left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 20px 20px;
+    border-radius: 40%;
+}
+
+.slider i {
+    font-size: 4rem;
+    
+}
+
+.slider__dot-list {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+}
+
+.slider__img-list{
+    position: relative;
+    display: flex;
+    height: 800px;
+    transition: 0.25s linear;
+}
+
+.slider__img-item{
+    flex: 1 0 100%;
+
+}
+
+.slider__img-pic{
+    width: 100%;
+    height: 100%;
+}
+
+.slider__trans-right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 20px 20px;
+    border-radius: 40%;
+}
+
+.slider__trans-right:hover, .slider__trans-left:hover {
+    background-color: rgba(03, 03, 03, 0.1);
+    
+}
+
+.container__grid-1{
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.container__criteria{
+    padding: 100px 0;
+    background-color: #e3e4e6;
+    border-radius: 30px;
+}
+
+.container__grid-1{
+}
+
+.container__criteria-list{
+    display: flex;
+    list-style: none;
+  
+}
+
+.criteria-select {
+    padding: 0 40px 0 0;
+}
+
+.criteria-select select{
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 2rem;
+    outline: none;
+}
+
+.criteria-select select option {
+  
+}
+
+.container__product-backgr{
+    background-image: url("../img/solid-concrete-wall-textured-backdrop.jpg") ;
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.container__product-item{
+    border-radius: 5px;
+    overflow: hidden;
+   background-color: #e3e4e6;
+   padding-bottom: 20px;
+   font-family: sans-serif;
+   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.container__product-img{
+    padding-top: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container__product-information{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+    border-bottom: 1px solid var(--text-color);
+}
+
+.container__product-information::after{
+    content: "";
+    border-bottom: 1px solid var(--text-color);
+}
+
+.container__product-information div{
+    padding: 4px 8px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.container__product-action {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__detail-inf{
+    
+}
+
+.product__add-comparison {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.footer__slogan{
+    font-size: 2rem;
+    color: var(--text-color);
+  
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 21;
+    display: none;
+}
+
+.modal__background{
+    width: 100%;
+    height: 100%;
+    background-color: #000000b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__card {    
+    width: 500px;
+    max-width: 500px;
+    height: calc(100% - 40px);
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.modal__card-head{
+    background-color: #242323;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.modal__card-head h4{
+    font-size: 3rem;
+    font-weight: 100;
+    color: #f3f3f3;
+}
+
+.modal__card-head i{
+    color: #f3f3f3;
+    width: 40px;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    text-align: center;
+}
+
+.modal__card-head i:hover{
+    background-color: #777777;
+}
+
+.modal__card-body{
+    overflow: scroll;
+    height: calc(100% - 62px - 50px);
+}
+
+.card-body_item {
+    color: #4a4a4a;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    border-top: 1px solid #969696;
+}
+
+.modal__card-foot{
+    background-color: #777777;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__card-close{
+    padding: 10px 150px;
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.modal__card-close:hover {
+    color: rgb(255, 15, 15);
+    scale: 1.05;
+}
+
+/* modal sign up */
+
+.modal__sign-up{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 21;
+    display: none;
+}
+
+.sign-up__background{
+    width: 100%;
+    height: 100%;
+    background-color: #000000b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up__card{
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.sign-up__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up__card h4, .sign-up__card i{
+    font-size: 2.5rem;
+    margin: 20px;
+    display: inline-block;
+}
+
+.sign-up__card i:hover{
+    color: #969696;
+}
+
+.sign-up__card input{
+    font-size: 1.5rem;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ccd0d5;
+    margin: 10px 5%;
+    border-radius: 4px;
+    outline: none;
+}
+
+.sign-up__card  button{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ccd0d5;
+    margin: 0 5%;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: #000000b7;
+}
+
+.sign-up__card  button:hover{
+    background-color: #333333b7;
+    font-weight: 600;
+}
+
+/* Log in */
+.modal__login{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 21;
+    display: none;
+}
+
+.login__background{
+    width: 100%;
+    height: 100%;
+    background-color: #000000b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__card{
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.login__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__card h4, .login__card i{
+    font-size: 2.5rem;
+    margin: 20px;
+    display: inline-block;
+}
+
+.login__card i:hover{
+    color: #969696;
+}
+
+.login__card input{
+    font-size: 1.5rem;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ccd0d5;
+    margin: 10px 5%;
+    border-radius: 4px;
+    outline: none;
+}
+
+.login__card  button{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ccd0d5;
+    margin: 0 5%;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: #000000b7;
+}
+
+.login__card  button:hover{
+    background-color: #333333b7;
+    font-weight: 600;
+}
